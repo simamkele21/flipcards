@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      font-size: x-large;
+      color: ivory;
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url(Amazing-HD-Black-Backgrounds.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: rgb(231, 0, 0);
+      color: black;
+    }
+
+    .flip-card-back {
+      background-color: #0d0ac7;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 40px;
+      column-gap: 7cm;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipcards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>My Top 6 Artists</h1>
+    <h3>The list below is in no partcular order</h3>
+
+    <div class="container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="wayne.jpg"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Lil Wayne</h1>
+            <p>American rapper</p>
+            <p>
+              Dwayne Michael Carter Jr. known professionally as Lil Wayne, is an
+              American rapper, record executive, and entrepreneur. He is
+              regarded by many contemporaries as one of the most influential hip
+              hop artists of his generation, and often cited as one of the
+              greatest rappers of all time.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="sjava.jpeg"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Sjava</h1>
+            <p>Singer</p>
+            <p>
+              Jabulani Hadebe, known professionally as Sjava, is a South African
+              singer, rapper, and actor. He began his acting career in 2005,
+              starring in several drama series and films including uGugu no
+              Andile. He then rose to prominence on the drama series Zone 14,
+              where he starred for three consecutive seasons.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="reece.jpeg"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>A-Reece</h1>
+            <p>South African rapper</p>
+            <p>
+              Lehlogonolo Ronald Mataboge known professionally as A-Reece, is a
+              South African rapper and songwriter, born and raised in
+              Atteridgeville, Pretoria, Gauteng. He is the younger brother of
+              P-Jay, a rapper who is one half of the South African hip hop duo
+              B3nchmarQ. A-Reece was signed with Ambitiouz Entertainment in
+              2015.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="wave.jpeg"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Rod Wave</h1>
+            <p>American rapper</p>
+            <p>
+              Rodarius Marcell Green, known professionally as Rod Wave, is an
+              American rapper and singer-songwriter. He is known for his strong
+              voice and incorporation of R&B and hip-hop. Rod rose to fame with
+              the 2019 single "Heart on Ice", which went viral on YouTube and
+              TikTok and peaked at number 25 on the Billboard Hot 100.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="pac.jpeg"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Tupac Shakur</h1>
+            <p>American rapper</p>
+            <p>
+              Tupac Amaru Shakur, better known by his stage name 2Pac and,
+              later, by his alias Makaveli, was an American rapper and actor. He
+              is widely considered one of the most influential rappers of all
+              time.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="emtee.jpeg"
+              alt="Avatar"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Emtee</h1>
+            <p>South African rapper</p>
+            <p>
+              Mthembeni Ndevu, better known by his stage name Emtee, is a South
+              African rapper. Born in Matatiele and grew up in Rockville,
+              Soweto, he was involved in talents shows. His career began at the
+              age of 17, his debut hit single, "Roll Up" was released in 2015.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
